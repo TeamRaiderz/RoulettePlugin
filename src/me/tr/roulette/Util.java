@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.bukkit.DyeColor;
 import org.bukkit.Material;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -16,6 +17,7 @@ public class Util {
 	private static ArrayList<String> playersWhoBetRed = new ArrayList<>();
 	private static ArrayList<String> playersWhoBetBlack = new ArrayList<>();
 	private static ArrayList<String> playersWhoBetGreen = new ArrayList<>();
+	private static ArrayList<Player> playersInRoulette = new ArrayList<>();
 	
 	public static ItemStack makeItem(Material material, int amount, int type, String name) {
 		ItemStack item = new ItemStack(material, amount, (short) type);
@@ -60,6 +62,8 @@ public class Util {
 		return wool;
 	}
 
+	
+	
 	public static ArrayList<String> getPlayersWhoBetRed() {
 		return playersWhoBetRed;
 	}
@@ -70,6 +74,10 @@ public class Util {
 
 	public static ArrayList<String> getPlayersWhoBetGreen() {
 		return playersWhoBetGreen;
+	}
+
+	public static ArrayList<Player> getPlayersInRoulette() {
+		return playersInRoulette;
 	}
 	
 }
