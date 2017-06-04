@@ -1,0 +1,8 @@
+main: me.tr.roulette.Main
+name: Roulette
+version: 1.0
+
+commands:
+  roulette:
+    description: Open roulette menu
+    aliases: [ruletti]
